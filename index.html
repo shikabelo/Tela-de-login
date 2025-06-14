@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+
+</head>
+
+<body>
+ <div class='container'>
+  <div class='form-box'><input type="text" class='uSer' id='uSer' placeholder="Usuário">
+    <input type='password' class='senha' id='senha' placeholder="Senha">
+  </div>
+   <div> <button class='botao-login'>Login</button> </div>
+    </div>
+  <script>
+  // Quando a página carregar...
+  window.onload = function () {
+    const botao = document.querySelector('.botao-login');
+    const usuario = document.getElementById('uSer');
+    const senha = document.getElementById('senha');
+
+    botao.addEventListener('click', function () {
+      const valorUsuario = usuario.value.trim();
+      const valorSenha = senha.value.trim();
+
+      if (valorUsuario === '' || valorSenha === '') {
+        alert('Por favor, preencha todos os campos.');
+      } else {
+        alert('Login enviado com sucesso!');
+        // Aqui você pode colocar o envio ou redirecionamento real depois.
+      }
+    });
+  }
+</script>
+  </body>
+  

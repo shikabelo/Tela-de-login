@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* alinha horizontalmente */
+  align-items: center;      /* alinha verticalmente */
+  background-color: #ccc;
+}
+
+.container {
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+  height: 180px;
+  text-align: center;
+  background-color: #ff6961;
+  
+}
+
+.uSer, .senha{
+  border-radius: 20px;
+  
+}
+.botao-login { 
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  width: 100%;
+ }
+.botao-login:active {
+  transform: scale(0.96); /* botão afunda */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* sombra mais fraca */
+}
+.form-box{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
